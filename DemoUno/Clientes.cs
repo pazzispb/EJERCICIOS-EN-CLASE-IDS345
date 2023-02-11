@@ -13,8 +13,10 @@ namespace DemoUno
         public string Apellidos { get; set; }
         public int Estado { get; set; }
         public DateTime FechaNacimiento { get; set; }
-
         public string Comentario { get; set; }
         public string Sexo { get; set; }
+        public int TipoDocumento { get; set; }
+        public string Documento { get; set; }
+        public decimal Balance { get; set; }
     }
 }
