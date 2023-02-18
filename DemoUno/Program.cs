@@ -125,6 +125,7 @@ namespace DemoUno
                     cmd.Parameters.AddWithValue("@TipoTransaccion", mov.TipoTransaccion);
                     cmd.Parameters.AddWithValue("@DbCredito", mov.DbCredito);
                     cmd.Parameters.AddWithValue("@Descripcion", obj.Comentario);
+                    cmd.Parameters.AddWithValue("@Oficina", ConfigurationManager.AppSettings["Oficina"]);
 
                     cmd.ExecuteNonQuery();
                     transaction.Commit(); //confirmar la transaccion
